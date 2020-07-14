@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="true_button">TRUE</string>
+    <string name="false_button">False</string>
+    <string name="question_text">Вопрос по Географии</string>
+    <string name="request_text">Ответ на вопрос</string>
+    <string name="correct_toast">Правильно!</string>
+    <string name="incorrect_toast">Не правильно!</string>
+
+</resources>
