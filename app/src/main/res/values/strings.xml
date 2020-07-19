@@ -4,7 +4,16 @@
     <string name="false_button">False</string>
     <string name="question_text">Вопрос по Географии</string>
     <string name="request_text">Ответ на вопрос</string>
-    <string name="correct_toast">Правильно!</string>
-    <string name="incorrect_toast">Не правильно!</string>
+    <string name="correct_toast">Верный ответ</string>
+    <string name="incorrect_toast">Неверный ответ</string>
+    <string name="next_button">Следуюший вопрос</string>
+
+    <string name="question1">question1 - правильный ответ true</string>
+    <string name="question2">question2 - правильный ответ false</string>
+    <string name="question3">question3 - правильный ответ true</string>
+    <string name="question4">question4 - правильный ответ false</string>
+    <string name="question5">question5 - правильный ответ true</string>
+    <string name="question6">question6 - правильный ответ false</string>
+    <string name="question7">question7 - правильный ответ true</string>
 
 </resources>

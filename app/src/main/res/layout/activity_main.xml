@@ -10,14 +10,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/queestion_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_text"
-
         android:layout_margin="40dp"
         android:padding="20dp"
-
         />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,22 +25,27 @@
         android:gravity="center">
 
         <Button
-android:id="@+id/true_button"
+            android:id="@+id/true_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/true_button"
             android:layout_margin="10dp"
             />
+
         <Button
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/false_button"
-
             />
 
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_button"
+        android:text="@string/next_button"/>
 
     <TextView
         android:id="@+id/request_text"
@@ -49,8 +54,16 @@ android:id="@+id/true_button"
         android:text="@string/request_text"
         android:layout_margin="40dp"
         android:padding="20dp"
-
-
         />
+    <TextView
+        android:id="@+id/request_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request_text"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        />
+
+
 
 </LinearLayout>
