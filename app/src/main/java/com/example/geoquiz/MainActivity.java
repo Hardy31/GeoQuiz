@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     };
     private  int mCurrentIndex = 0;
     private static final String TAG = "QuizActivity";
+    private static final String KEY_INDEX = "index";
 
 
 
@@ -36,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_main);
+
+        if (savedInstanceState != null) {
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+        }
+
         mQuestionTextView = (TextView) findViewById(R.id.queestion_text_view);
         updateQuestion();
 
@@ -121,19 +127,39 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onStart() called Стартанул");
     };
 
+    @Override
+    public void onPause () {
+        super.onPause();
+        Log.d(TAG, "onPause() called Стартанул");
+    };
+
+
+    @Override
     public void onResume(){
         super.onResume();
         Log.d(TAG, "onResume() called");
     };
 
+    @Override
     public void onStop(){
         super.onStop();
         Log.d(TAG, "onStop() called");
     };
 
+    @Override
     public void onDestroy(){
         super.onDestroy();
         Log.d(TAG, "onDestroy() called");
     };
+
+    @Override
+    public void onSaveInstanceState(Bundle saveInstanceState) {
+
+        super.onSaveInstanceState(saveInstanceState);
+        Log.d(TAG, "onSaveInstanceState");
+        saveInstanceState.putInt(KEY_INDEX, mCurrentIndex);
+
+    }
+
 
 }
